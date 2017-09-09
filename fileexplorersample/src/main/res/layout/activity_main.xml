@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<Button
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:onClick="onFileExplorer"
+		android:text="文件管理器"/>
+
+	<Button
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:onClick="onSelectOneFromAllFiles"
+		android:text="从所有文件中选择一项"/>
+
+
+	<Button
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:onClick="onSelectMultipleFromAllFiles"
+		android:text="从所有文件中选择多项"/>
+
+
+	<Button
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:onClick="onSelectSpecificOne"
+		android:text="选择一项特定类型的文件"/>
+
+
+	<Button
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:onClick="onSelectSpecificMultiple"
+		android:text="选择多项特定类型的文件"/>
+
+	<Button
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:onClick="onSelectCustomSuffixMultiple"
+		android:text="选择自定义后缀名的文件"/>
+
+</LinearLayout>

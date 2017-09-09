@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/divier_color"
+	android:orientation="vertical">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="1px"
+		android:background="@color/white"
+		android:padding="10dp"
+		>
+
+		<ImageView
+			android:id="@+id/iv_file_icon"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:scaleType="fitXY"
+			android:src="@drawable/ic_file"/>
+
+		<TextView
+			android:id="@+id/tv_file_name"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignBottom="@+id/iv_file_icon"
+			android:layout_alignTop="@+id/iv_file_icon"
+			android:layout_toLeftOf="@+id/cb_file_selected"
+			android:layout_toRightOf="@+id/iv_file_icon"
+			android:ellipsize="end"
+			android:gravity="left|center_vertical"
+			android:singleLine="true"
+			android:text="文件名"
+			android:textColor="@color/text_color"
+			android:textSize="@dimen/text_size"/>
+
+		<CheckBox
+			android:id="@+id/cb_file_selected"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:button="@drawable/selector_check_box"
+			android:clickable="false"
+			android:focusable="false"
+			android:focusableInTouchMode="false"/>
+
+	</RelativeLayout>
+
+
+</LinearLayout>

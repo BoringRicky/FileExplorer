@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  xmlns:tools="http://schemas.android.com/tools"
+			  android:layout_width="match_parent"
+			  android:layout_height="match_parent"
+			  android:background="@color/white"
+			  android:orientation="vertical"
+			  tools:context="me.ricky.fileexplorer.fragment.SpecificTypeFragment">
+
+	<GridView
+		android:id="@+id/gv_files"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_weight="1"
+		android:horizontalSpacing="1dp"
+		android:verticalSpacing="1dp"/>
+
+	<LinearLayout
+		android:id="@+id/ll_multi_select"
+		android:layout_width="match_parent"
+		android:layout_height="45dp"
+		android:gravity="center"
+		android:orientation="horizontal"
+		android:paddingBottom="5dp"
+		android:paddingTop="5dp"
+		android:visibility="gone">
+
+		<Button
+			android:id="@+id/btn_cancel_multi_select"
+			android:layout_width="100dp"
+			android:layout_height="30dp"
+			android:background="@drawable/shape_btns"
+			android:text="@string/cancel"
+			android:textColor="@color/text_color"
+			android:textSize="@dimen/text_size"/>
+
+		<Button
+			android:id="@+id/btn_confirm_multi_select"
+			android:layout_width="100dp"
+			android:layout_height="30dp"
+			android:layout_marginLeft="20dp"
+			android:background="@drawable/shape_btns"
+			android:text="@string/confirm"
+			android:textColor="@color/text_color"
+			android:textSize="@dimen/text_size"/>
+
+	</LinearLayout>
+
+</LinearLayout>

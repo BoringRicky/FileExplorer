@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  xmlns:tools="http://schemas.android.com/tools"
+			  android:id="@+id/activity_file_list"
+			  android:layout_width="match_parent"
+			  android:layout_height="match_parent"
+			  android:background="@color/white"
+			  android:orientation="vertical"
+			  tools:context="me.ricky.fileexplorer.FileListActivity">
+
+	<TextView
+		android:id="@+id/tv_file_path"
+		android:layout_width="match_parent"
+		android:layout_height="30dp"
+		android:layout_marginLeft="10dp"
+		android:ellipsize="end"
+		android:gravity="center_vertical"
+		android:maxLines="1"
+		android:padding="5dp"
+		android:textColor="@color/text_color" />
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1px"
+		android:background="@color/divier_color" />
+
+	<ListView
+		android:id="@+id/lv_file_list"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_marginLeft="5dp"
+		android:layout_marginRight="5dp"
+		android:layout_weight="1"
+		android:divider="@color/divier_color"
+		android:dividerHeight="1px" />
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1px"
+		android:background="@color/divier_color" />
+
+	<LinearLayout
+		android:visibility="gone"
+		android:id="@+id/ll_multi_select"
+		android:layout_width="match_parent"
+		android:layout_height="45dp"
+		android:gravity="center"
+		android:orientation="horizontal"
+		android:paddingBottom="5dp"
+		android:paddingTop="5dp">
+
+		<Button
+			android:id="@+id/btn_cancel_multi_select"
+			android:layout_width="100dp"
+			android:layout_height="30dp"
+			android:background="@drawable/shape_btns"
+			android:text="@string/cancel"
+			android:textColor="@color/text_color"
+			android:textSize="@dimen/text_size" />
+
+		<Button
+			android:id="@+id/btn_confirm_multi_select"
+			android:layout_width="100dp"
+			android:layout_height="30dp"
+			android:layout_marginLeft="20dp"
+			android:background="@drawable/shape_btns"
+			android:text="@string/confirm"
+			android:textColor="@color/text_color"
+			android:textSize="@dimen/text_size" />
+
+	</LinearLayout>
+
+</LinearLayout>
